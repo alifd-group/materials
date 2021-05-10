@@ -6,8 +6,9 @@ import { useFusionTable, useFullscreen } from 'ahooks';
 import CustomList, { Column } from './CustomList';
 import { getColumnKey } from './util';
 
-import styles from './index.module.scss';
+import styles from './index.module.css';
 
+// @ts-ignore
 const TableActionIcon = Icon.createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_1899388_oxn3zhg34oj.js',
 });

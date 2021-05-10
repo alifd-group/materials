@@ -3,7 +3,7 @@ import { Card, Box } from '@alifd/next';
 import { Chart, Geom, Axis, Tooltip } from 'bizcharts';
 import classNames from 'classnames';
 
-import styles from './index.module.scss';
+import styles from './index.module.css';
 
 interface TitleItem {
   name?: string;
@@ -52,7 +52,7 @@ export interface CardConfigProps {
   cardConfig?: CardConfig;
 }
 
-const InfoBlock: React.FC<CardConfig> = (props = DEFAULT_DATA.titleItem[0]): JSX.Element => {
+const InfoBlock: React.FC<TitleItem> = (props = DEFAULT_DATA.titleItem[0]): JSX.Element => {
   const { name, value, des, rate } = props;
   return (
     <Box className={styles.header} direction="column">
